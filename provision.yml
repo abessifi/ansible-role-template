@@ -1,0 +1,6 @@
+---
+
+- hosts: ansible-vm
+  sudo: no
+  roles:
+    - ansible-kitchen-template

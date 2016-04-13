@@ -1,0 +1,4 @@
+---
+
+- name: Create foobar file
+  file: path="/tmp/{{file_name}}" state=touch owner=vagrant group=vagrant
