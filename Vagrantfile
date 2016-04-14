@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder '.', '/vagrant' , disabled: true
 
   config.vm.define 'ansible-vm' do |cfg|
-    cfg.vm.box = 'abessifi/debian-jessie-ansible'
+    cfg.vm.box = 'foo/bar'
     cfg.vm.hostname = 'ansible-vm'
     cfg.vm.network 'private_network', ip: '192.168.33.101'
     cfg.vm.provider 'virtualbox' do |v|
